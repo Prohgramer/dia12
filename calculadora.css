@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid_container{
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+        "pantalla pantalla pantalla pantalla"
+        "pantalla pantalla pantalla pantalla"
+        "clear clear del div"
+        "num9 num8 num7 mult"
+        "num6 num5 num4 suma"
+        "num3 num2 num1 menos"
+        "coma cero enviar enviar"
+    ;
+    padding: 15px;
+    background-color: transparent;
+    gap: 10px;
+}
+button{
+    outline: none;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+}
+#f1t1{
+    border: none;
+    outline: none;
+    text-align: right;
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.hola{
+    grid-area: pantalla;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.num9{
+    grid-area: num1;
+}
+.num8{
+    grid-area: num2;
+}
+.clear{
+    grid-area: clear;
+    border-radius: 1px;
+}
+.enviar{
+    grid-area: enviar;
+    border-radius: 1px;
+}
+.num3{
+    grid-area: num3;
+    
+}
+.div{
+    grid-area: div;
+}
+.num4{
+    grid-area: num4;
+}
+.num5{
+    grid-area: num5;
+}
+.num6{
+    grid-area: num6;
+}
+.por{
+    grid-area: mult;
+}
+.num7{
+    grid-area: num7;
+}
+.num8{
+    grid-area: num8;
+}
+.num9{
+    grid-area: num9;
+}
+.suma{
+    grid-area: suma;
+}
+.coma{
+    grid-area: coma;
+}
+.num0{
+    grid-area: cero;
+}
+.del{
+    grid-area: del;
+}
+.menos{
+    grid-area: menos;
+}
+.numeros{
+    border: 1px solid white;
+}
+button:active{
+    background-color:slateblue
+}
